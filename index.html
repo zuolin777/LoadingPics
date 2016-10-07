@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LoadingPics</title>
+	<script src="loadingPics.js"></script>
+</head>
+<body>
+	<div>
+		<img />
+		<img />
+		<img />
+	</div>
+</body>
+<script type="text/javascript">
+	var imgs = document.getElementsByTagName('img');
+	var arr = ['http://p4.vanclimg.com/product/6/3/7/6373620/mid/6373620-1j201602031645416635.jpg',
+	'http://p5.vanclimg.com/product/6/3/7/6375052/mid/6375052-1j201607251645549821.jpg',
+	'http://p4.vanclimg.com/product/6/3/7/6374138/mid/6374138-1j201604220951157466.jpg'];
+
+	loadingPics(arr,arrImgs);
+	function arrImgs(){
+		for(var i = 0; i < arr.length; i ++){
+			imgs[i].src = arr[i];
+		}
+	}
+</script>
+</html>

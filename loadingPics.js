@@ -1,7 +1,7 @@
 /*
 *图片预加载 zl
 */
-function loading(arr,callBack){
+function loadingPics(arr,callBack){
 	var arrAllImg = [];
 	var count = 0;
 	if(!(arr instanceof Array)){
